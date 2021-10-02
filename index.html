@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="WHO Weekly Meeting Notes" />
+  <meta name="author" content="Joey Dang" />
+  <title>WHO Weekly Meeting Notes</title>
+  <link rel="who icon" type="image/jpg" href="assets/favicon.ico" />
+</head>
+<body>
+  <header style="padding: 0 50px">
+    <h1>World Health Organization Meeting Notes</h1>
+    <h2>Sept 30 - <span style="color:#3F8BDA">WASHFIT</span> Weekly Sync Check</h2>
+    <h3>Date: <time datetime="2021-09-30">September 30, 2021 8:04PM</time></h3>
+    <h3>Cycle: Summer 21</h3>
+    <h3>Participants</h3>
+    <ol>
+      <li>Julia Liu <em>(Project Manager)</em></li>
+      <li>Victor Zhen <em>(Developer)</em></li>
+      <li>Ahmed Abdullah <em>(Developer)</em></li>
+      <li>Joey Dang <em>(Developer)</em></li>
+      <li>Irenna Lumbuun <em>(Developer)</em></li>
+      <li>Emily Jablonski <em>(Mentor)</em></li>
+      <li>Arabella Hayter <em>(Cilent)</em></li>
+    </ol>
+    <hr />
+    <h2>Agenda</h2>
+  </header>
+  <nav style="padding: 0 50px">
+    <ul>
+      <li><a href="#complete">Task Completion</a></li>
+      <li><a href="#questions">Questions</a></li>
+      <li><a href="#tasks">Future Tasks</a></li>
+    </ul>
+  </nav>
+  <br />
+  <main style="padding: 10px 50px">
+    <section id="complete">
+      <h3>Task Completion - 10mins</h3>
+      <p>Everyone was given a task last week and today we are going to dicuss what we all have done over the week for this meetinng. This is a quick overlap of the tasks everyone worked through and also feedback on their part.</p>
+      <div style="display:inline-flex">
+        <h4>New Design Update - Improvement Plan</h4>
+        <img src="assets/improvement.png" alt="design" style="height:350px;" />
+      </div>
+      <h4>Tasks</h4>
+      <ul>
+        <li style="margin:10px 0">Verification email be more personalized: <i>"Hello, Thank you for registering for WASHFIT"</i>, mention name of facility in the email <b>@Victor</b></li>
+        <ul>
+          <li>Cannot edit the email template because Firebase wants to prevent spam emails</li>
+          <li>Will look into it more</li>
+        </ul>
+        <li style="margin:10px 0">Add dropdown underneath the "Score Tracking" navbar to select domain to view line graph history of that domain and update data in the line graphs under "Score Tracking" accordingly to domain selection <b>@Joey</b></li>
+        <ul>
+          <li>Finished, score tracking section should update based on domains now</li>
+        </ul>
+        <li style="margin:10px 0">Mark tasks as completed: provide a better signal to the user that it's being competed, for ex: disappearing the task (look at Reminders app on iPhone) <b>@Irenna</b></li>
+        <ul>
+          <li>Finished, updated action plan view more so there is also a sorting option for action view</li>
+        </ul>
+        <li style="margin:10px 0">Change date to the deadline date and add innput field for selecting different dates <b>@Ahmed</b></li>
+        <ul>
+          <li>Finished, added more changes to action plan input fields</li>
+        </ul>
+      </ul>
+      <details>
+        <summary><b>Indicators Changes</b></summary>
+        <p>
+          Essentially, the list of categories of indicators and the indicators themselves should be available for all facilities, but each facility can choose which indicator applies to them. For example, the categories are “Water,” “Sanitation,” “Healthcare Waste,” etc., and under each category we have the indicators, such as “w_1a,” “w_1b,” “w_2a,” etc. in the “Water” category. Under each indicator, the facility can create as many assessments as they want, and these assessments will be displayed in the timeline view.
+        </p>
+      </details>
+    </section>
+    <section id="questions">
+      <h3>Questions  - 30mins</h3>
+      <h4>Answered Questions</h4>
+      <ol>
+        <li style="margin:10px 0">What is the priority for the admin-level app (i.e. country government, WHO)?</li>
+        <ol style="list-style-type: lower-alpha; padding-bottom: 0;">
+          <li style="margin-bottom:10px">What are the <strong>specific needs and requirements </strong>for the app (i.e. features, security, users)?</li>
+          <ul style="list-style-type: circle;">
+            <li>Admin level can change the indicators, "user level", i.e. at the facility cannot.</li>
+            <li>This means that the admin level can adapt the app according to the national situation as all countries are different and require different indicators</li>
+            <li>(e.g. more or less, wording of indicators)</li>
+          </ul>
+        </ol>
+        <li style="margin:10px 0">Do you have a comprehensive list of languages for translation?</li>
+        <ul style="list-style-type: circle;">
+          <li>The priority will be French but we should focus on just the English version for now.</li>
+          <li>Other countries may want to translate it but this is way down the line and probably past your project cycle!</li>
+        </ul>
+        <li style="margin:10px 0">Do the users need email to login/register?</li>
+        <ol style="list-style-type: lower-alpha; padding-bottom: 0;">
+          <li style="margin-bottom:10px">Is there only one account for facility (every member logs into thru that)? The issue with this is security––Is security a big issue?</li>
+          <ul style="list-style-type: circle;">
+            <li>Yes, users will need a email address to login and use as the username</li>
+            <li><i>"Do what is easiest"</i> -  if you can have multiple emails that are somehow connected to one facility?</li>
+            <li>If not, then one account per facility is fine.</li>
+          </ul>
+        </ol>
+      </ol>
+      <h4>Questions audio</h4>
+      <audio controls>
+        <source src="assets/chill.mp3" type="audio/mpeg" />
+        Browser doesn't support this audio element.
+      </audio>
+    </section>
+    <section id="tasks">
+      <h3>Future Tasks  - 15mins</h3>
+      <p>
+        Figure out how to structure the facility-specific assessments in Firebase but we are not sure what’s the easiest and most intuitive way to do so. Since there’s not that much time left in the cycle, we are trying to figure out if it is worth it to completely restructure the assessments in Firebase, which would also involve recoding many parts of the frontend code.
+      </p>
+      <h4>Final Meeting Video</h4>
+      <video height="400" controls  >
+        <source src="assets/illenium.mp4" type="video/mp4" />
+        Browser doesn't support this video element.
+      </video>
+    </section>  
+  </main>
+  <form>
+    <fieldset>
+      <label for="fname">First name:</label><br>
+      <input type="text" id="fname" name="fname"><br>
+      <label for="lname">Last name:</label><br>
+      <p>What day is it?</p>
+      <input type="text" id="lname" name="lname"><br>
+      <label for="day">Date:</label><br>
+      <input type="date" id="day" name="day"/>
+      <p>What do you have at home</p>
+      <input type="checkbox" id="bed" name="items" value="Bed">
+      <label for="bed"> I have a bed</label><br>
+      <input type="checkbox" id="chair" name="items" value="Chair">
+      <label for="chair"> I have a chair</label><br>
+      <input type="checkbox" id="desk" name="items" value="Desk">
+      <label for="desk"> I have a desk</label>
+      <p>What is your favorite season</p>
+      <input list="season" name="saeson" id="saeson" />
+      <datalist id="saeson">
+        <option value="Summer"> </option>
+        <option value="Winter"> </option>
+        <option value="Fall"> </option>
+        <option value="Spring"> </option>
+      </datalist>
+      <p>Favorite animals:</p>
+      <select name="animal" id="animal">
+        <option value="cows">Cows</option>
+        <option value="ducks">Ducks</option>
+        <option value="dog">Dog</option>
+        <option value="cat">Cat</option>
+      </select>
+      <p>What is your favorite icecream flavor?</p>
+      <input type="radio" id="vanilla" name="flavor" value="vanilla" />
+      <label for="vanilla">Vanilla</label><br />
+      <input type="radio" id="chocolate" name="flavor" value="chocolate" />
+      <label for="chocolate"> Chocolate</label><br />
+      <input type="radio" id="strawberry" name="flavor" value="strawberry" />
+      <label for="strawberry">Strawberry</label><br /><br />
+      <p>What do you like to do for fun</p>
+      <textarea id="activities" name="activities" placeholder="activities" rows="5" cols="40"></textarea>
+      <br />
+      <button style="margin-top:10px" type="button">Submit</button>
+    </fieldset>
+  </form>
+  <footer>
+    <p>Author: Joey Dang</p>
+  <p><a href="mailto:joey@example.com">joey@example.com</a></p>
+  </footer>
+</body>
+</html> 

@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css?family=Hind:300,300i,400,400i,500,500i,700,700i,900,900i');
+
+body {
+  box-sizing: border-box;
+  color: #333;
+  font-family: Hind;
+  height: auto;
+  margin: 0;
+  padding: 0 50pt 0 50pt;
+  overflow-x: hidden;
+  width: 100vw;
+}
+
+* {
+  text-align: left;
+}
+
+a {
+  text-decoration: none;
+}
+
+a[target='questions'] {
+  background-color: #fffad6;
+}
+
+.agenda {
+  color: hsl(205, 65%, 63%);
+  font-size: 2em;
+}
+
+.box-temp {
+  border: 1px solid red;
+  height: 100px;
+  position: relative;
+  width: 100%;
+}
+
+.cat {
+  border: 10px solid white;
+  width: 100%;
+}
+
+.cat-grids {
+  display: grid;
+  grid-column-start: col-start 2;
+  grid-template-columns: 100px 100px 100px;
+  grid-template-rows: 100px 100px 100px;
+}
+
+.cycle-header, .date-header {
+  color: red;
+}
+
+.design-update {
+  align-items: center;
+  background-color: #def3fd;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: auto;
+}
+
+footer p {
+  text-align: center;
+}
+
+.form-inputs-table {
+  margin: 20px 0 25px 5px;
+  display: inline;
+  width: calc(100% - 100pt);
+}
+
+.form-inputs-table > fieldset{
+  border: 0;
+  border-radius: 5px;
+  box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.25);
+  padding: 0.5in;
+}
+
+h3 ~ ol {
+  background-color: #fffad6;
+}
+
+h3 + h4 {
+  background-color: #fffad6;
+}
+
+h5 {
+  margin: 0;
+}
+
+div.hidden-text {
+  display: none;
+}
+
+input {
+  width: 100%;
+}
+
+.list-header {
+  margin: 10px 0;
+}
+
+.meeting-text {
+  position: absolute;
+  right: 0;
+  top: 30px;
+}
+
+.notes-pic {
+  height: 350px;
+  flex-basis: 0;
+  flex-grow: 0;
+  flex-shrink: 0;
+  margin: 10px;
+}
+
+.org-header:hover {
+  color: #3F8BDA;
+}
+
+.org-name {
+  color: #3F8BDA;
+  text-decoration: underline dotted red;
+}
+
+p {
+  font-size: 1.2em;
+}
+
+#participants {
+  margin-bottom: 10px;
+  margin-left: 35px;
+  margin-right: 15px;
+  margin-top: 10px;
+}
+
+.radio-inputs {
+  width: auto !important;
+}
+
+.sub-list {
+  list-style-type:circle;
+  margin-left: 50px;
+}
+
+#submit-button {
+  background-color: #fff;
+  border-color: #6291AB !important;
+  border-radius: 5px;
+  border-width: 2px;
+  color: #6291AB;
+  margin-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 10px;
+}
+
+#submit-button:active {
+  color: red;
+}
+
+.task-header {
+  font-size: 1.5rem;
+  margin: auto;
+  text-align: center;
+}
+
+.video-meeting {
+  margin: auto;
+  min-width: 100%;
+  max-width: 500px;
+}
+
+
+@media (min-width: 768px) {
+  input {
+    width: 300px;
+  }
+}
